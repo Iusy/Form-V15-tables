@@ -1,0 +1,245 @@
+/* @charset "utf-8";
+/* Global Styles */
+
+html {box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+
+}  
+
+body{box-sizing: inherit;
+	margin: 0px;
+	padding: 0px;
+	counter-reset:crt;
+	background-color: white;
+}  
+
+.curency_style{
+-webkit-appearance: none;
+border: 0;
+}
+
+.global{box-sizing: inherit;
+	display: flex;   
+	flex-direction: column;
+    margin:0px;
+    padding: 0px;
+}
+
+.containerFinOf{
+	display: flex;
+	flex-direction: column;
+	box-sizing: inherit;
+	color: #D27328;
+	color: white;
+	
+}
+
+.financialOffer{display: inherit;
+	flex-direction: inherit;
+	box-sizing: inherit;
+	color: #616161;
+	font-family: 'Righteous', cursive;	
+	font-size: 135px;
+	align-items: center;
+	width: 920px;
+	height: 150px;
+	margin: 0px;
+	position: absolute;
+	top: 680px;
+	left: 100px;
+
+}
+
+
+.for{display: inherit;
+	flex-direction: inherit;
+	box-sizing: inherit;
+	align-items: center;
+	color: #D27328;
+	font-family: 'Italianno', cursive;
+	font-size: 165px;
+	width:200px;
+	height: 150px;
+	position: absolute;
+	top: 755px;
+	left: 150px;
+
+}
+.clientName{display: inherit;
+box-sizing: inherit;
+flex-direction: inherit;
+	color: #F58220;
+	font-family: 'Roboto', sans-serif;
+	font-size: 80px;
+	font-style: bold;
+	border: none;
+	background: transparent;
+	align-items: center;
+	width:450px;
+	height: 150px;
+	position: absolute;
+	top: 860px;
+	left: 300px;
+}
+.cvd{
+	/* display: flex; */
+	box-sizing: border-box;
+	flex-direction: column;
+height: 500px;
+
+
+}
+.containerMeta{box-sizing: inherit;
+	display: inherit;
+	align-content: center;
+	color: white;
+	font-size: 45px;
+	width: 200px;
+	height: 168px;
+	position: absolute;
+	left: 250px;
+	top: 1050px;
+	
+
+}
+.currency{
+	font-family: 'Righteous', cursive;
+	font-size: inherit;
+	color: #616161;
+
+}
+
+.vat{
+	font-family: 'Righteous', cursive;
+	font-size: inherit;
+	color: #616161;
+}
+
+.date{
+	font-family: 'Righteous', cursive;
+	font-size: inherit;
+	color: #616161;
+}
+
+.verticalSeparator{
+position: absolute;
+left: 452px;
+top: 1050px;
+}
+
+.img_pic{
+	box-sizing: inherit;
+	display: inherit;	
+	width: 310px; 
+	height: 290px;
+	position: absolute;
+	left: 900px;
+	top: 980px;
+
+}
+.containerVarData{box-sizing: inherit;
+	display: inherit;
+	flex-direction: inherit;
+	text-align:center;
+	font-size: 45px;
+	color: #F58220;
+	font-family: 'Righteous', cursive;
+	width: 270px;
+	height: 168px;
+	position: absolute;
+	left: 460px;
+	top: 1050px;
+}
+.currencyVar{
+	box-sizing: inherit;
+	display: inherit;
+	flex-direction: inherit;
+	font-size: inherit;
+	color: #F58220;
+	font-family: 'Righteous', cursive;
+}
+
+.tvaVar{
+	box-sizing: inherit;
+	display: inherit;
+	flex-direction: inherit;
+	font-size: inherit;
+	color: #F58220;
+	font-family: 'Righteous', cursive;
+}
+
+.date_var{
+	box-sizing: inherit;
+	display: inherit;
+	flex-direction: inherit;
+	text-align: right;
+	font-size: inherit;
+	color: #F58220;
+	font-family: 'Righteous', cursive;
+	border: none;
+	width: 270px;
+
+}
+
+.bt_img{
+	box-sizing: inherit;
+	display: inherit;
+	width: 100%;
+	
+}
+
+.vatVar{
+	position: inherit;
+	bottom: inherit;
+	font-family: inherit;
+}
+.dateVar{
+	position: inherit;
+	bottom: inherit;
+	font-family: inherit;
+}
+
+.all_info{display: flex;
+padding-left: 104px;
+flex-direction: column;
+}
+
+.signature{box-sizing: inherit;
+	display: inherit;
+	
+	font-family: 'Righteous', cursive;
+}
+
+.web_adress{
+	box-sizing: inherit;
+	display: inherit;
+	font-family: 'Righteous', cursive;
+	align-self: center;
+	justify-content: center;
+
+}
+
+.signName{
+	position: relative;
+	bottom: auto;
+	left: -4px;
+	font-family: 'Righteous', cursive;
+	color: #F58220;
+	font-size: 35px;
+}
+.positionTitle{
+	position: inherit;
+	bottom: auto;
+	font-family: 'Righteous', cursive;
+	color: #616161;
+	font-size: 32px;
+	margin: 0px;
+}
+
+ /* @media only screen and (min-width:1270px){
+	.body{
+		width: 100%;
+	}
+}  */ 

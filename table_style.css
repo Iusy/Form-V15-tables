@@ -1,0 +1,342 @@
+
+/* alternate color row*/
+/* 
+#t2 td:nth-child(4n+2) {
+  background-color: red;
+} */
+
+h1::before{
+  counter-increment: crt; 
+  content:counter(crt);
+}
+
+h1{
+  font-size: 15px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.container-table {
+  box-sizing: border-box;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.wrap-table1 {
+  width: 1250px;
+  margin: 50px auto 10px auto;
+  box-sizing: border-box;
+  border-spacing: 0px;
+  border-collapse: collapse;
+}
+
+.wrap-table2 {
+  width: 1250px;
+  margin: 0px auto 10px auto;
+  box-sizing: border-box;
+  border-spacing: 0px;
+  border-collapse: collapse;
+}
+
+.wrap-table3 {
+  width: 1250px;
+  margin: 0px auto 10px auto;
+  box-sizing: border-box;
+  border-spacing: 0px;
+  border-collapse: collapse;
+}
+
+.wrap-table4 {
+  width: 1250px;
+  margin: 0px auto 30px auto;
+  box-sizing: border-box;
+  border-spacing: 0px;
+  border-collapse: collapse;
+}
+
+#t1 {
+  width: 100%;
+  border-spacing: 0px;
+  border-collapse: collapse;
+  box-sizing: border-box;
+  border-style: solid;
+  border-color: rgb(68,155,150);
+  border-width: 5px;
+  border-bottom-style: none;
+}
+
+ #t2 {
+  width: 100%;
+  border-spacing: 0px;
+  border-collapse: collapse;
+  box-sizing: border-box;
+  border-style: solid;
+  border-color: rgb(68,155,150);
+  border-width: 5px;
+}
+
+#t3 {
+  width: 100%;
+  border-spacing: 0px;
+  border-collapse: collapse;
+  box-sizing: border-box;
+  border-style: solid;
+  border-color: rgb(146, 36, 31);
+  border-width: 5px;
+  border-bottom-style: none;
+}
+
+ #t4 {
+  width: 100%;
+  border-spacing: 0px;
+  border-collapse: collapse;
+  box-sizing: border-box;
+  border-style: solid;
+  border-color: rgb(146, 36, 31);
+  border-width: 5px;
+}
+
+#t5 {
+  width: 100%;
+  border-spacing: 0px;
+  border-collapse: collapse;
+  box-sizing: border-box;
+  border-style: solid;
+  border-color: rgb(245, 130, 31);
+  border-width: 5px;
+  border-bottom-style: none;
+}
+
+#t6 {
+  width: 100%;
+  border-spacing: 0px;
+  border-collapse: collapse;
+  box-sizing: border-box;
+  border-style: solid;
+  border-color: rgb(245, 130, 31);
+  border-width: 5px;
+}
+
+#t7 {
+  width: 100%;
+  border-spacing: 0px;
+  border-collapse: collapse;
+  box-sizing: border-box;
+  border-style: solid;
+  border-color: rgb(251, 186, 99);
+  border-width: 5px;
+  border-bottom-style: none;
+}
+
+#t8{
+  width: 100%;
+  border-spacing: 0px;
+  border-collapse: collapse;
+  box-sizing: border-box;
+  border-style: solid;
+  border-color: rgb(251, 186, 99);
+  border-width: 5px;
+}
+
+.content_border1{
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgb(68,155,150);
+  width: 979px;
+  padding-left: 10px;
+}
+
+.content_border2{
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgb(146, 36, 31);
+  /* width: 900px; */
+  padding-left: 10px;
+}
+
+.content_border3{
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgb(245, 130, 31);
+  width: 979px;
+  padding-left: 10px;
+}
+
+.content_border4{
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgb(251, 186, 99);
+  width: 979px;
+  padding-left: 10px;
+}
+
+.b2{
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgb(146, 36, 31);
+  text-align: center;
+}
+
+.b3{
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgb(245, 130, 31);
+}
+
+.b4{
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgb(251, 186, 99);
+}
+
+.nr_crt1{
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgb(68,155,150);
+  width: 20px;
+}
+
+.nr_crt2{
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgb(146, 36, 31);
+  width: 20px;
+}
+
+.nr_crt3{
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgb(245, 130, 31);
+  width: 20px;
+}
+
+.nr_crt4{
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgb(251, 186, 99);
+  width: 20px;
+}
+
+td {
+  box-sizing: border-box;
+  padding:0px;
+  margin: 0px;
+  font-family: 'Arial';
+}
+
+.accounting{
+  box-sizing: border-box;
+  margin: 0px;
+  padding-left: 50px; 
+  text-align: left;
+  font-family: 'Righteous', cursive; 
+  font-size: 2rem;  
+  color: rgb(68,155,150);
+  border-style: solid;
+  border-width: 0px 5px 0px 0px;
+  border-color: rgb(68,155,150);
+  width: 999px;
+}
+
+.payroll{
+  box-sizing: border-box;
+  margin: 0px;
+  padding-left: 50px; 
+  text-align: left;
+  font-family: 'Righteous', cursive; 
+  font-size: 2rem;  
+  color: rgb(146, 36, 31);
+  border-style: solid;
+  border-width: 0px 5px 0px 0px;
+  border-color: rgb(146, 36, 31);
+  width: 999px;
+}
+
+.consultancy{
+  box-sizing: border-box;
+  margin: 0px;
+  padding-left: 50px; 
+  text-align: left;
+  font-family: 'Righteous', cursive; 
+  font-size: 2rem;  
+  color: rgb(245, 130, 31);
+  border-style: solid;
+  border-width: 0px 5px 0px 0px;
+  border-color: rgb(245, 130, 31);
+  width: 999px;
+}
+
+.other_services{
+  box-sizing: border-box;
+  margin: 0px;
+  padding-left: 50px; 
+  text-align: left;
+  font-family: 'Righteous', cursive; 
+  font-size: 2rem;  
+  color: rgb(251, 186, 99);
+  border-style: solid;
+  border-width: 0px 5px 0px 0px;
+  border-color: rgb(251, 186, 99);
+  width: 999px;
+}
+
+.pricing{
+  box-sizing: border-box;
+  font-family: 'Righteous', cursive; 
+  font-size: 1.7rem; 
+  color: rgb(95,95,95);
+}
+
+.pricing_text{
+  text-align: center;
+  font-family: 'Arial';
+}
+
+.pricing_text_p{
+  text-align: center;
+  font-family: 'Arial';
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgb(146, 36, 31);
+  width: 246px;
+}
+
+.pricing_text_c{
+  text-align: center;
+  font-family: 'Arial';
+}
+
+.pricing_text_o{
+  text-align: center;
+  font-family: 'Arial';
+}
+
+.vat_font{
+  text-align: center;
+  font-family: 'Arial'; 
+  font-weight:bold;
+}
+
+.vat_price-font{
+  text-align: center;
+  font-family: 'Arial';
+  }
+
+
+
+
+
+
+
+
+
+
+
+

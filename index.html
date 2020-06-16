@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+    <!-- <meta charset="UTF-8"> -->
+    <meta name="viewport" content="width=device-with, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <title>Financial Offer - A&I Consulting</title>
+  <link href="https://fonts.googleapis.com/css?family=Italianno&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">	
+  <link href="aboutPageStyle.css" rel="stylesheet" type="text/css">
+  <link href="table_style.css" rel="stylesheet" type="text/css">
+
+
+
+
+<link href= 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui-lightness/jquery-ui.css'
+		rel='stylesheet'> 
+	
+	<script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" > </script> 
+	
+  <script src= "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" > </script> 
+  
+
+  <!-- Script for showing the form-->
+
+  <!-- <script language="JavaScript">
+
+    function universalFunction() 
+    {show_client();
+     show_currency();
+     show_vat();
+     show_data();
+     getText(slction);
+    } 
+
+</script> -->
+
+
+<!-- Script for the Client name section-->
+<script language="JavaScript">
+
+    function show_client() 
+    {document.getElementById('clientname').innerHTML = 
+        document.getElementById("nume_client").value; }
+
+</script>
+
+
+<!-- Script for the Currency section-->
+<script language="JavaScript">
+
+  function show_currency() 
+  {document.getElementById('moneda').innerHTML = 
+      document.getElementById("currency").value; }
+
+</script>
+
+<!-- Script for the VAT section-->
+<script language="JavaScript">
+
+    function show_vat() 
+    {document.getElementById('tva').innerHTML = 
+        document.getElementById("vat").value; }
+  
+  </script>
+
+<!-- Script for the Date section-->
+<script language="JavaScript">
+
+  function show_data() 
+  {document.getElementById('data').innerHTML = 
+      document.getElementById("my_date_picker").value; }
+
+</script>
+
+<script> 
+  $(document).ready(function() { 
+  
+  $(function() {$( "#my_date_picker" ).datepicker({dateFormat: 'dd-mm-yy',}).datepicker("setDate",new Date()); }); 
+  })  
+  </script>
+  
+
+<!-- Script for the Contact Person section-->
+<script language="JavaScript">
+
+  var Txt = new Array()
+  Txt[0] = "Please Select Option"
+  Txt[1] = "Ioana Varga <br/> Expert contabil - Managing Partner <br/> +40 737 042 178 <br/> ioana.varga@aiconsulting.ro <br/>"
+  Txt[2] = "Ioana Costea <br/> Expert contabil - Managing Partner <br/> +40 737 042 178 <br/> ioana.costea@aiconsulting.ro <br/>"
+  Txt[3] = "Adrian Besleaga <br/> Managing Operatiuni <br/> +40 737 042 178 <br/> adrian.besleaga@aiconsulting.ro <br/>"
+  
+  function getText(slction)
+  {txtSelected = slction.selectedIndex; 
+  document.getElementById('persoana_contact').innerHTML = Txt[txtSelected];} 
+</script>
+
+<!-- Script to show section-->
+<script language="JavaScript">
+function showE() 
+{ element = document.querySelector('.display0'); 
+            element.style.display = 'inline'; }
+</script>
+
+<!-- Script for the Add new informations section-->
+
+<script>
+            
+  var myArr = [];
+  
+  function pushData()
+  {
+      // get value from the input text
+      var inputText = document.getElementById('inputText').value;
+      
+      // append data to the array
+      myArr.push(inputText);
+      
+      var pval = "";
+      
+      for(i = 0; i < myArr.length; i++)
+      {
+          pval = pval + myArr[i] +"<br/>";
+      }
+     
+      // display array data
+      document.getElementById('add_text').innerHTML =pval;
+  }
+  
+</script>
+
+
+          <!-- SCRIPT FOR SWITCH SECTION -->
+
+
+<!-- Script for the Currency switch section-->
+
+<script>
+  function curency_switch(){
+    var el = document.getElementById('cur_ron')
+    
+    if (el.firstChild.data == "RON") {el.firstChild.data = "EUR";}
+     else {el.firstChild.data = "RON";   }
+  }
+  </script>
+
+<!-- Script for the TVA switch section-->
+
+<script>
+  function tva_switch(){
+        var v_tva = document.getElementById('b_tva')
+     
+    if (v_tva.firstChild.data == "Exclusive") {v_tva.firstChild.data = "Inclusive";}
+     else {v_tva.firstChild.data = "Exclusive";}
+  }
+  </script>
+
+<!-- Script for the Rep person switch section-->
+<script>
+  function rep_switch(){
+    var rep_ai = document.getElementById('ai_rep')
+    var rep_email = document.getElementById('email_id')
+    var rep_phone = document.getElementById('phone_id')
+    var rep_title = document.getElementById('title_id')
+
+    if(rep_ai.firstChild.data == "Ioana Costea")
+      {rep_ai.firstChild.data = "Adrian Besleaga";
+      rep_email.firstChild.data="adrian.besleaga@aiconsulting.ro"
+      rep_phone.firstChild.data="+40 737 529 790"
+      rep_title.firstChild.data="Managing Operatiuni"}
+     
+     else if(rep_ai.firstChild.data == "Adrian Besleaga")
+      {rep_ai.firstChild.data = "Ioana Varga";
+      rep_email.firstChild.data="ioana.varga@aiconsulting.ro"
+      rep_phone.firstChild.data="+40 737 042 178"
+      rep_title.firstChild.data="Expert contabil - Managing Partner"}
+     
+     else if (rep_ai.firstChild.data = "Ioana Varga") 
+      {rep_ai.firstChild.data = "Ioana Costea";
+      rep_email.firstChild.data="ioana.costea@aiconsulting.ro"
+      rep_phone.firstChild.data="+40 730 524 194"
+      rep_title.firstChild.data="Expert contabil - Managing Partner"}
+  }
+  </script>
+
+</head>
+
+
+<body>
+  
+<!-- Image and graphics part  -->
+
+ 
+        <!-- Header content -->
+     
+      
+        <img src="source/topAsset@4x.png" style="width: 100%;" />
+        <p class="financialOffer">Financial offer</p>
+        <div class="for">for</div>
+        <div class="clientName"></div>	
+          <input class="clientName" value="Nume Client" type="text" id="nume_client" oninput="show_client()" >
+        
+      
+       
+      <!-- Client data content -->
+        
+    <div class="cvd">
+      <div class="containerMeta"  >
+        <div class="currency">Currency</div>
+        <div class="vat">VAT</div>
+        <div class="date">Date</div>
+
+      </div>
+
+    <img class="verticalSeparator" src="source/verticalSeparator.png" width="6px" height="170px" alt=""/>
+
+    <img class="img_pic" src="source/profile_pic.PNG" />
+
+
+        <!-- INFORMATION data variable content -->
+      
+        <!-- Currency variable content -->
+        
+<div class="containerVarData">
+
+<button type="button" id="cur_ron"  class="currencyVar" 
+style="border:0; background: white;" onclick="curency_switch()"> EUR </button>
+
+<!-- TVA variable content -->
+        <div class="vatVar"><p id="tva" ></p></div>
+
+        <button type="button" id="b_tva" class="tvaVar" data-="Inclusive"
+        style="border:0; background: white;" onclick="tva_switch()"> Inclusive </button>
+        <script></script>
+<!-- Date variable content -->
+        <div class="dateVar"><p id="date" ></p></div>
+        <input class="date_var"  type="text" id="my_date_picker" onchange="show_data()">
+          </div>
+        </div>
+  
+
+  
+      <!-- A&I reps variable content -->
+
+     <div class="all_info" >
+      <table class="signature" border="0px" cellpadding="0" cellspacing="1" width="800px">
+          
+            <div class="signName">
+              <button type="button" class="signName" id="ai_rep"  value="Ioana Varga"
+        style="border:0; background: white;" onclick="rep_switch()" > Ioana Varga </button>
+            </div>
+
+            <p id="title_id" class="positionTitle">Expert contabil - Managing Partner</p>
+            
+          <img src="source/horizontalSeparator.png" style="left: 70px; width: 750px; height: 3px;margin-top: 10px; margin-bottom: 10px;">
+        
+      </table>
+      
+     
+       
+      
+          <div style="display: flex; ">
+          <img src="source/phone.png" width="25px" height="26px" alt="" style="padding-top: 2.5px;">
+          <p id="phone_id" style="font-family: 'Righteous', cursive; color: #616161; font-size: 25px; margin:0px 0px 0px 10px; ">+40 737 042 178</p>
+        </div>
+
+        <div style="display: flex; margin-top: 5px;">
+          <img src="source/envelope.png"width="25px" height="26px" alt="" style="margin:5px 0px 0px 0px; ">
+          <p id="email_id" style="font-family: 'Righteous', cursive; color: #616161; font-size: 25px; margin:0px 0px 0px 10px; ">ioana.varga@aiconsulting.ro</p>
+         
+        
+
+          <div style="display:flex; margin-left: 80px;">
+          <img src="source/webAdress.png" width="25px" height="26px" alt="" style="margin:0px 0px 0px 5px; padding-top: 5px;">
+          <p style="font-family: 'Righteous', cursive; color: #616161; font-size: 25px; margin:0px 0px 0px 10px;  ">www.aiconsulting.ro</p>
+          
+         </div>
+        
+      </div>
+
+     
+        <div style="display: flex; margin-top: 10px;">
+          <img src="source/handWatch.png"width="25px" height="26px" alt="" style="padding-top:20px">
+          <p style="font-family: 'Righteous', cursive; color: #616161; font-size: 25px; margin:0px; padding:0px;"  >Program: 9:00 - 17:00 <br> cu pauza de masa intre 12:00-13:00</p> 
+         
+          <div style="display:flex; margin-left: 8px;">
+          <img src="source/locationTag.png" width="25px" height="26px" alt="" style="padding-top:20px">
+          <p style="font-family: 'Righteous', cursive; color: #616161; font-size: 25px; margin:0px; padding-left: 10px;">Cluj-Napoca <br>Cal.Motilor Nr.6-8 Et.5</p>
+          </div>
+
+      </div>
+
+       <div style="display: flex; ">
+       </div>
+
+   
+        
+      </div>
+
+    <img src="source/bottomAsset.png" class="bt_img" >
+
+  </div>
+
+<!-- PAGE 2- TABLE CONTAINER -->
+
+<!-- TABLE 1 -->
+<div class="container-table">
+  <div class="wrap-table1" >
+                                
+          <table id="t1">
+            <thead >
+              <tr >
+                <th  class="accounting">Accounting</th>
+                <th class="pricing">Pricing</th>
+              </tr>
+            </thead>
+          </table>
+        
+          <table id="t2">
+            <tbody>
+              <tr >
+                <td class="nr_crt1"><h1></h1> </td>
+                <td class="content_border1">Processing of primary financial documents (petty cash, bank statements, input-output invoices)  - A&I Consulting accountant</td>
+                <td  class="vat_font" >For VAT payer:</td>
+              </tr>
+
+              <tr >
+                <td class="nr_crt1"> <h1></h1> </td>
+                <td class="content_border1">Stock management is the responsibility of the customer</td>
+                <td class="vat_price-font">200 Euro/month</td>
+              </tr>
+
+              <tr >
+                <td class="nr_crt1"> <h1></h1> </td>
+                <td class="content_border1">Validate accounting records  - A&I Consulting accountant  - monthly</td>
+                <td class="vat_font" >For VAT non-payer:</td>
+              </tr>
+
+              <tr >
+                <td class="nr_crt1"> <h1></h1> </td>
+                <td class="content_border1">Permanent supervision  - A&I Consulting Expert Accountant</td>
+                <td class="vat_price-font" >150 Euro/month</td>
+              </tr>
+
+              <tr >
+                <td class="nr_crt1"> <h1></h1> </td>
+                <td class="content_border1">Filing and submitting on legal terms all the tax statements required by</td>
+                <td ></td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+<!-- TABLE 2 -->
+<div class="container-table">
+  <div class="wrap-table2" >
+    
+          <table id="t3">
+            <thead >
+              <tr >
+                <th  class="payroll">Payroll and Personnel Management</th>
+                <th class="pricing">Pricing</th>
+              </tr>
+            </thead>
+          </table>
+        
+          <table id="t4">
+            <tbody>
+              <tr >
+                <td class="nr_crt2"><h1></h1> </td>
+                <td class="content_border2">Payroll, Assistance and Representation in front of the labor </td>
+                <td  class="b2" >Up to 2 employees</td>
+                <td  class="pricing_text_p">25 Euro/month</td>
+                
+              </tr>
+
+              <tr >
+                <td class="nr_crt2"> <h1></h1> </td>
+                <td class="content_border2">Authorities  - A&I Consulting HR Specialist</td>
+                <td  class="b2" >Over 2 employees</td>
+                <td  class="pricing_text_p" >*to be negotiated</td>
+              </tr>
+          
+            </tbody>
+          </table>
+      </div>
+    </div>
+
+<!-- TABLE 3 -->
+<div class="container-table">
+  <div class="wrap-table3" >
+    
+          <table id="t5">
+            <thead >
+              <tr >
+                <th  class="consultancy">Consultancy</th>
+                <th class="pricing">Pricing</th>
+              </tr>
+            </thead>
+          </table>
+        
+          <table id="t6">
+            <tbody>
+              <tr class="b3">
+                <td class="nr_crt3"><h1></h1> </td>
+                <td class="content_border3">Fiscal consultancy regarding the activity of the company  - A&I Consulting Manager/Expert Accountant</td>
+                <td  class="pricing_text_c" >30 – 50 Euro/hour</td>
+              </tr>
+
+              <tr class="b3" >
+                <td class="nr_crt3"> <h1></h1> </td>
+                <td class="content_border3">Assistance and consultancy during fiscal audits</td>
+                <td class="pricing_text_c">50 Euro/hour</td>
+              </tr>
+
+              <tr class="b3" >
+                <td class="nr_crt3"> <h1></h1> </td>
+                <td class="content_border3">Fiscal consultancy regarding other subjects but the activity of the company  - A&I Consulting Manager/Expert Accountant</td>
+                <td class="pricing_text_c" >50 – 80 Euro/hour</td>
+              </tr>
+                          
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+<!-- TABLE 4 -->
+<div class="container-table">
+  <div class="wrap-table4" >
+    
+          <table id="t7">
+            <thead >
+              <tr >
+                <th  class="other_services">Other Services</th>
+                <th class="pricing">Pricing</th>
+              </tr>
+            </thead>
+          </table>
+        
+          <table id="t8">
+            <tbody>
+              <tr class="b4" >
+                <td class="nr_crt4"><h1></h1> </td>
+                <td class="content_border4">Registration for VAT purposes by excess limit</td>
+                <td  class="pricing_text_o" >300 Euro/procedure</td>
+              </tr>
+
+              <tr class="b4">
+                <td class="nr_crt4"> <h1></h1> </td>
+                <td class="content_border4">Drawing up leasing or credit documentation</td>
+                <td class="pricing_text_o">50 Euro/request</td>
+              </tr>
+
+              <tr class="b4" >
+                <td class="nr_crt4"> <h1></h1> </td>
+                <td class="content_border4">Submission of ammending statements on the grounds of the beneficiary</td>
+                <td class="pricing_text_o">10 Euro/statement</td>
+              </tr>
+
+              <tr class="b4">
+                <td class="nr_crt4"> <h1></h1> </td>
+                <td class="content_border4">Certification of annual financial statements at the legal term</td>
+                <td class="pricing_text_o" >200 Euro/year</td>
+              </tr>
+
+              <tr class="b4">
+                <td class="nr_crt4"> <h1></h1> </td>
+                <td class="content_border4">EU funds projects documentation needed for reimbursement</td>
+                <td class="pricing_text_o" >*to be negotiated regarding the complexity of the projects</td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+</body>
+</html>
